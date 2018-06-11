@@ -1,12 +1,10 @@
-# Define display_board that accepts a board and prints
-# out the current state.
-def display_board(x)
-  puts "#{x[0]}  |#{x[1]} |#{x[2]}"
-  puts "-----------"
-  puts "#{x[3]}  |#{x[4]} |#{x[5]}"
-  puts "-----------"
-  puts "#{x[6]}  |#{x[7]} |#{x[8]}"
-end
+def display_board(board)
+separator = "|"
+lines = "-----------"
 
-board = [" " , " " , " " , " " , " " , " " , " " , " " , " "]
-display_board(board)
+puts " #{board[0]} #{separator} #{board[1]} #{separator} #{board[2]} "
+puts "#{lines}"
+puts " #{board[3]} #{separator} #{board[4]} #{separator} #{board[5]} "
+puts "#{lines}"
+puts " #{board[6]} #{separator} #{board[7]} #{separator} #{board[8]} "
+end
